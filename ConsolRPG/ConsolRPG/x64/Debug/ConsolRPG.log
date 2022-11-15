@@ -1,0 +1,8 @@
+﻿  Character.cpp
+C:\Users\User\source\repos\ConsolRPG\ConsolRPG\Character.cpp(46,25): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\source\repos\ConsolRPG\ConsolRPG\Character.cpp(93,28): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  Game.cpp
+  main.cpp
+C:\Users\User\source\repos\ConsolRPG\ConsolRPG\main.cpp(6,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода...
+  ConsolRPG.vcxproj -> C:\Users\User\source\repos\ConsolRPG\x64\Debug\ConsolRPG.exe
