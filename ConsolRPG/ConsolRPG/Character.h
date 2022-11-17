@@ -12,6 +12,8 @@ public:
 	void initialize(const std::string name);
 	void printStats() const;
 	void levelUp();
+	std::string getAsString() const;
+
 
 	//Accessors
 	inline const double& getX() const { return this->xPos; }

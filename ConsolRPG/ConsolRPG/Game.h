@@ -1,8 +1,11 @@
 #pragma once
 
 #include "Character.h"
-#include <ctime>
 #include "Function.h"
+#include <ctime>
+#include <vector>
+#include <fstream>
+
 
 class Game
 {
@@ -15,6 +18,11 @@ public:
 	//Function
 	void initGame();
 	void mainMenu();
+	void createNewCharacter();
+	void saveCharacters();
+	void loadCharacters();
+
+	
 
 	//Accessories
 	inline bool getPlaying() const { return this->plaing; }
@@ -25,6 +33,8 @@ private:
 	bool plaing;
 
 	//Character related
-	Character character;
+	int activeCharacter;
+	std::vector<Character> characters;
+	std::string fileName;
 };
 

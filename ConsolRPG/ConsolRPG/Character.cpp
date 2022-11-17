@@ -70,12 +70,9 @@ void Character::printStats() const
 	std::cout << "= Level: " << this->level << std::endl;
 	std::cout << "= EXP: " << this->exp << std::endl;
 	std::cout << "= EXP to next level: " << this->expNext << std::endl;
-	std::cout << std::setw(10) << std::setfill('=') << std::endl;
 	std::cout << "= Srenght: " << this->strenght << std::endl;
 	std::cout << "= Vitality: " << this->vitality << std::endl;
-	std::cout << "= Dexterity: " << this->dexterity << std::endl;
-	std::cout << "= Intelligence: " << this->intelligence << std::endl;
-	std::cout << std::setw(10) << std::setfill('=') << std::endl;
+	std::cout << "= Dexterity: " << this->dexterity << std::endl;std::cout << std::setw(10) << std::setfill('=') << std::endl;
 	std::cout << "= Hp: " << this->hp << " / " << this->hpMax << std::endl;
 	std::cout << "= Stamina: " << this->stamina << " / " << this->staminaMax << std::endl;
 	std::cout << "= Damage: " << this->damageMin << " - " << this->damageMax << std::endl;
@@ -97,4 +94,23 @@ void Character::levelUp()
 		this->skillPoints++;
 	}
 	
+}
+
+std::string Character::getAsString() const
+{
+	return std::to_string(xPos) + ' '
+		+ std::to_string(yPos) + ' '
+		+ name + ' '
+		+ std::to_string(level) + ' '
+		+ std::to_string(exp) + ' '
+		+ std::to_string(strenght) + ' '
+		+ std::to_string(vitality) + ' '
+		+ std::to_string(dexterity) + ' '
+		+ std::to_string(intelligence) + ' '
+		+ std::to_string(hp) + ' '
+		+ std::to_string(stamina) + ' '
+		+ std::to_string(statPoints) + ' '
+		+ std::to_string(skillPoints);
+
+
 }
