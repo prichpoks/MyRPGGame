@@ -37,6 +37,10 @@ private:
 	double xPos;
 	double yPos;
 
+	Inventory inventory;
+	Weapon weapon;
+	Armor armor;
+
 	std::string name;
 	int level;
 	int exp;
@@ -46,6 +50,7 @@ private:
 	int vitality;
 	int dexterity;
 	int intelligence;
+	
 
 
 	int hp;
@@ -55,6 +60,7 @@ private:
 	int damageMin;
 	int damageMax;
 	int defence;
+	int luck;
 
 
 

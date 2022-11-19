@@ -20,6 +20,8 @@ Game::~Game()
 void Game::initGame()
 {
 	createNewCharacter();
+	Weapon w1(2, 5, "Exkalibur", 1, 100, 100, 1);
+	std::cout << w1.toString() << std::endl;
 }
 
 void Game::mainMenu()
@@ -73,7 +75,7 @@ void Game::createNewCharacter()
 	getline(std::cin, name);
 
 	characters.push_back(Character());
-	activeCharacter = characters.size() - 1;
+	activeCharacter = characters.size() - 1	;
 
 	characters[activeCharacter].initialize(name);
 }

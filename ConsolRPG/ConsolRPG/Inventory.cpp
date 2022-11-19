@@ -4,7 +4,7 @@ Inventory::Inventory()
 {
 	this->cap = 10;
 	this->nrOfItems = 0;
-	this->itemArr = new Item * [cap];
+	this->itemArr = new Item * [this->cap];
 }
 
 Inventory::~Inventory()
@@ -13,20 +13,16 @@ Inventory::~Inventory()
 	{
 		delete this->itemArr[i];
 	}
-	delete[] itemArr;
+	delete[] this->itemArr; // !!!This is problem!!!
 }
 
 void Inventory::expand()
 {
 	this->cap *= 2;
-	Item** tempArr = new Item * [this->cap];
+	Item** tempArr = new Item*[this->cap];
 	for (size_t i = 0; i < this->nrOfItems; i++)
 	{
-		tempArr[i] = new Item(*this->itemArr[i]);
-	}
-	for (size_t i = 0; i < this->nrOfItems; i++)
-	{
-		delete this->itemArr[i];
+		tempArr[i] = this->itemArr[i];
 	}
 	delete[] this->itemArr;
 
@@ -36,7 +32,7 @@ void Inventory::expand()
 }
 void Inventory::initialize(const int from)
 {
-	for (size_t i = from; i < cap; i++)
+	for (size_t i = from; i < this->cap; i++)
 	{
 		this->itemArr[i] = nullptr;
 	}
@@ -44,11 +40,12 @@ void Inventory::initialize(const int from)
 
 void Inventory::addItem(const Item& item)
 {
+	//this->nrOfItems++; // !!!controversial decision!!!
 	if (this->nrOfItems >= this->cap)
 	{
 		this->expand();
 	}
-	this->itemArr[this->nrOfItems++] = new Item(item);
+	this->itemArr[this->nrOfItems++] = item.clone();
 }
 void Inventory::removeItem(int index)
 {
