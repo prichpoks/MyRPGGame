@@ -1,2 +1,4 @@
-﻿  Inventory.cpp
+﻿  Game.cpp
+C:\Users\User\Desktop\Програмирование\MyRPGGame\ConsolRPG\ConsolRPG\Game.cpp(33,21): warning C4267: аргумент: преобразование из "size_t" в "const int"; возможна потеря данных
+C:\Users\User\Desktop\Програмирование\MyRPGGame\ConsolRPG\ConsolRPG\Game.cpp(91,42): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
   ConsolRPG.vcxproj -> C:\Users\User\Desktop\Програмирование\MyRPGGame\ConsolRPG\x64\Debug\ConsolRPG.exe
