@@ -1,4 +1,8 @@
-﻿  Game.cpp
-C:\Users\User\Desktop\Програмирование\MyRPGGame\ConsolRPG\ConsolRPG\Game.cpp(33,21): warning C4267: аргумент: преобразование из "size_t" в "const int"; возможна потеря данных
-C:\Users\User\Desktop\Програмирование\MyRPGGame\ConsolRPG\ConsolRPG\Game.cpp(91,42): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+﻿  Enemy.cpp
+C:\Users\User\Desktop\Програмирование\MyRPGGame\ConsolRPG\ConsolRPG\Enemy.h(26,41): warning C4552: "*": результат выражения не используется
+C:\Users\User\Desktop\Програмирование\MyRPGGame\ConsolRPG\ConsolRPG\Enemy.cpp(10,28): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+  Game.cpp
+C:\Users\User\Desktop\Програмирование\MyRPGGame\ConsolRPG\ConsolRPG\Enemy.h(26,41): warning C4552: "*": результат выражения не используется
+C:\Users\User\Desktop\Програмирование\MyRPGGame\ConsolRPG\ConsolRPG\Game.cpp(79,42): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  Создание кода...
   ConsolRPG.vcxproj -> C:\Users\User\Desktop\Програмирование\MyRPGGame\ConsolRPG\x64\Debug\ConsolRPG.exe

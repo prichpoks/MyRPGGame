@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Inventory.h"
+#include "Enemy.h"
 
 class Character
 {
@@ -18,7 +19,6 @@ public:
 	//Accessors
 	inline const double& getX() const { return this->xPos; }
 	inline const double& getY() const { return this->yPos; }
-
 	inline const std::string& getName() const { return this->name; }
 	inline const int& getLevel() const { return this->level; }
 	inline const int& getExp() const { return this->exp; }
@@ -26,16 +26,19 @@ public:
 	inline const int& getHp() const { return this->hp; }
 	inline const int& getHpMax() const { return this->hpMax; }
 	inline const int& getStamina() const { return this->stamina; }
+	inline const int& getStaminaMax() const { return this->staminaMax; }
 	inline const int& getDamageMin() const { return this->damageMin; }
 	inline const int& getDamageMax() const { return this->damageMax; }
 	inline const int& getDefence() const { return this->defence; }
+	inline const int& getAccuracy() const { return this->defence; }
+	inline const int& getLuck() const { return this->luck; }
 
 
 	//Modifier
 private:
 	
 	double xPos;
-	double yPos;
+	double yPos; 
 
 	Inventory inventory;
 	Weapon weapon;
@@ -63,6 +66,7 @@ private:
 	int damageMin;
 	int damageMax;
 	int defence;
+	int accuracy;
 	int luck;
 
 

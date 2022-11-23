@@ -19,7 +19,8 @@ Game::~Game()
 
 void Game::initGame()
 {
-
+	Enemy e(rand() % 10 + 1);
+	std::cout << e.getAsString() << std::endl; 
 	createNewCharacter();
 
 }
@@ -94,6 +95,11 @@ void Game::saveCharacters()
 	outFile.close();
 }
 void Game::loadCharacters()
+{
+
+}
+
+void Game::travel()
 {
 
 }

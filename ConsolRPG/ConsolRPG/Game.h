@@ -21,6 +21,7 @@ public:
 	void createNewCharacter();
 	void saveCharacters();
 	void loadCharacters();
+	void travel();
 
 	
 
