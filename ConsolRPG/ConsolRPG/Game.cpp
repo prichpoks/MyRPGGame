@@ -19,9 +19,10 @@ Game::~Game()
 
 void Game::initGame()
 {
-	Enemy e(rand() % 10 + 1);
-	std::cout << e.getAsString() << std::endl; 
+	
 	createNewCharacter();
+	Puzzel p("lel.txt");
+	std::cout << p.getAsString() << "\n";
 
 }
 
@@ -101,5 +102,9 @@ void Game::loadCharacters()
 
 void Game::travel()
 {
+	this->characters[this->activeCharacter].travel();
 
+	Event ev;
+
+	ev.generateEvent(this->characters[this->activeCharacter]);
 }
